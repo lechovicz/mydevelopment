@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171112 18:52:43.194" generator="Robot 3.0.2 (Python 2.7.12 on win32)">
+<suite source="c:\Learning\Robot-framework\Tests\allegro.robot" id="s1" name="Allegro">
+<test id="s1-t1" name="TestCase1">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://allegro.pl</arg>
+<arg>ie</arg>
+</arguments>
+<msg timestamp="20171112 18:53:13.425" level="INFO">Opening browser 'ie' to base url 'http://allegro.pl'</msg>
+<status status="FAIL" endtime="20171112 18:53:13.426" starttime="20171112 18:52:43.272"></status>
+</kw>
+<doc>Info about this test</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" endtime="20171112 18:53:13.428" critical="yes" starttime="20171112 18:52:43.272">Execution terminated by signal</status>
+</test>
+<doc>Some basic things</doc>
+<status status="FAIL" endtime="20171112 18:53:13.437" starttime="20171112 18:52:43.209"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Smoke</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Allegro" pass="0">Allegro</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

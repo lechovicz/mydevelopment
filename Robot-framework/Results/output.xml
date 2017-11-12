@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171112 19:53:40.331" generator="Robot 3.0.2 (Python 2.7.12 on win32)">
+<suite source="C:\Learning\Robot-framework\Tests\allegro.robot" id="s1" name="Allegro">
+<test id="s1-t1" name="TestCase1">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${webpage}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20171112 19:53:43.077" level="INFO">Opening browser 'chrome' to base url 'https://allegro.pl'</msg>
+<status status="PASS" endtime="20171112 19:53:55.795" starttime="20171112 19:53:43.077"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Urodziny Allegro</arg>
+</arguments>
+<status status="PASS" endtime="20171112 19:53:55.899" starttime="20171112 19:53:55.796"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>xpath=html/body/div[3]/div[3]/nav/div[1]/div/div[1]/div/div/form/input[1]</arg>
+<arg>${product}</arg>
+</arguments>
+<msg timestamp="20171112 19:53:55.901" level="INFO">Typing text 'python' into text field 'xpath=html/body/div[3]/div[3]/nav/div[1]/div/div[1]/div/div/form/input[1]'</msg>
+<status status="PASS" endtime="20171112 19:53:56.353" starttime="20171112 19:53:55.900"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>szukaj</arg>
+</arguments>
+<msg timestamp="20171112 19:53:56.354" level="INFO">Clicking button 'szukaj'.</msg>
+<status status="PASS" endtime="20171112 19:53:59.960" starttime="20171112 19:53:56.354"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>partial link=naukowe</arg>
+</arguments>
+<msg timestamp="20171112 19:53:59.962" level="INFO">Clicking link 'partial link=naukowe'.</msg>
+<status status="PASS" endtime="20171112 19:54:03.139" starttime="20171112 19:53:59.961"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>partial link=Wydanie IV</arg>
+</arguments>
+<msg timestamp="20171112 19:54:03.140" level="INFO">Clicking link 'partial link=Wydanie IV'.</msg>
+<status status="PASS" endtime="20171112 19:54:08.088" starttime="20171112 19:54:03.140"></status>
+</kw>
+<doc>Search for a particular product</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20171112 19:54:08.091" critical="yes" starttime="20171112 19:53:43.077"></status>
+</test>
+<doc>Some basic things</doc>
+<status status="PASS" endtime="20171112 19:54:08.094" starttime="20171112 19:53:40.331"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Smoke</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Allegro" pass="1">Allegro</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
