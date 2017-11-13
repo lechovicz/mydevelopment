@@ -59,3 +59,96 @@ for D in values:
 print result
 
 ##########################################33333
+
+'''
+Write a program that accepts a comma separated sequence of words as input and prints the words
+in a comma-separated sequence after sorting them alphabetically.
+'''
+
+words=[i for i in raw_input().split(",")]
+words.sort()
+print ",".join(words)
+
+##############################################
+
+'''
+Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
+'''
+
+capitalized=[]
+while True:
+    lines=raw_input()
+    if lines:
+        capitalized.append(lines.upper())
+    else:
+        break
+for x in capitalized:
+    print x
+
+######################################################
+
+'''
+Write a program which accepts a sequence of comma separated 4 digit binary numbers as its input and 
+then check whether they are divisible by 5 or not.  
+The numbers that are divisible by 5 are to be printed in a comma separated sequence.
+'''
+
+numbers=[]
+items=[i for i in raw_input().split(",")]
+for x in items:
+    intb2 = int(x,2)
+    if intb2%5 == 0:
+        numbers.append(x)
+
+print ",".join(numbers
+
+##########################################
+
+'''
+Write a program that accepts a sentence and calculate the number of letters and digits.
+'''
+
+count={'letters':0, 'digits':0 }
+sentence = raw_input("Provide a sentence:")
+
+for x in sentence:
+    if x.isalpha():
+        count['letters']+=1
+    elif x.isdigit():
+
+##########################################
+
+'''
+Write a program to check the validity of password input by users.
+Following are the criteria for checking the password:
+1. At least 1 letter between [a-z]
+2. At least 1 number between [0-9]
+1. At least 1 letter between [A-Z]
+3. At least 1 character from [$#@]
+4. Minimum length of transaction password: 6
+5. Maximum length of transaction password: 12
+'''
+
+import re
+passinput=['123', '12345678', '12345678901112', 'Aa1$','Aaaaaaaaa1$','ABd1234@1', 'aaaaaaaa', 'Aaaaaaaaa']
+#passinput=raw_input('enter your password:').split(',')
+valid = []
+passlist = [n for n in passinput]
+
+for x in passlist:
+    if len(x) < 6 or len(x) > 12:  # >6 and <12 req
+        continue
+    else:
+        pass
+    if not re.search("[0-9]",x):
+        continue
+    elif not re.search("[a-z]",x):
+        continue
+    elif not re.search("[A-Z]",x):
+        continue
+    elif not re.search("[$#@]",x):
+        continue
+    else:
+        pass
+    valid.append(x)
+print ",".join(valid)
